@@ -1,0 +1,106 @@
+body {
+  background: #b25353;
+  margin: 20px 0 15px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.logo-wrapper {
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(0 0, 10% 100%, 100% 10%);
+  background: #fff;
+  padding-left: 6px;
+  margin: 0 auto 86px 15px;
+}
+
+.logo-wrapper:hover {
+  clip-path: polygon(0 0, 100% 0, 20% 100%, 0 0);
+}
+
+.logo-wrapper .logo-text {
+  -webkit-font-smoothing: antialiased;
+  padding-top: 11px;
+  font-size: 47px;
+  font-weight: 600;
+  color: #b25353;
+  line-height: 0.9;
+}
+
+main {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 16px;
+}
+
+main span {
+  font-size: 14px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+  padding: 1px 3px;
+  color: #333;
+  background: #e4c3c3;
+  border: 1px solid #4e1717;
+  border-radius: 3px;
+}
+
+main .container {
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 16px;
+}
+
+main .container .project {
+  grid-column: 4 / end;
+}
+
+main .container .project h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+main .container .project p {
+  line-height: 1.5em;
+}
+
+main .container p {
+  font-weight: lighter;
+}
+
+main .container .pic {
+  grid-column: 1 / span 3;
+  width: 100%;
+  clip-path: polygon(100% 0, 100% 100%, 35% 100%, 0 75%, 0 0);
+}
+
+main .container .intro {
+  grid-column: 2 / 8;
+  margin-bottom: 50px;
+}
+
+main .container .intro h1 {
+  font-size: 24px;
+  line-height: 1.3em;
+}
+
+main .container .intro p {
+  line-height: 1.5em;
+}
+
+main .container .buffer {
+  background: lightcoral;
+}
+
+main .container .projects-head {
+  grid-column: 2 / 8;
+}
+
+main .container .projects-head h1 {
+  line-height: 0.9;
+}
