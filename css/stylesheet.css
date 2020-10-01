@@ -12,7 +12,13 @@ body {
   padding: 7px;
 }
 
-.logo-wrapper {
+@media (max-width: 1000px) {
+  .sidebar {
+    grid-column: 1 / 12;
+  }
+}
+
+.sidebar .logo-wrapper {
   width: 250px;
   height: 250px;
   clip-path: polygon(0 0, 10% 100%, 100% 10%);
@@ -22,11 +28,11 @@ body {
   display: inline-block;
 }
 
-.logo-wrapper:hover {
+.sidebar .logo-wrapper:hover {
   clip-path: polygon(0 0, 100% 0, 20% 100%, 0 0);
 }
 
-.logo-wrapper .logo-text {
+.sidebar .logo-wrapper .logo-text {
   -webkit-font-smoothing: antialiased;
   padding-top: 11px;
   font-size: 47px;
@@ -119,6 +125,12 @@ main .container .pic {
 main .container .intro {
   grid-column: 2 / 8;
   margin-bottom: 50px;
+}
+
+@media (min-width: 1000px) {
+  main .container .intro {
+    margin-top: 50px;
+  }
 }
 
 main .container .intro h1 {
