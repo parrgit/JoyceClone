@@ -1,7 +1,6 @@
 $primary: #b25353;
 
 body {
-
   background: $primary;
   margin: 20px 0 15px;
   font-family: Helvetica, Arial, sans-serif;
@@ -54,7 +53,20 @@ main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 16px;
+    @media (max-width: 600px) {
+      // .rise{
+      //   position: relative;
+      //   top: -100px;
+      // }
+    }
     .project {
+      grid-column: 4 / 9;
+      @media (max-width: 600px) {
+        grid-column: 1 / 8;
+        position: relative;
+        top: -90px;
+        height: calc(100% - 100px); //.projectのheightを縮めたい
+      }
       h2 {
         font-size: 20px;
         font-weight: normal;
@@ -62,16 +74,17 @@ main {
       p {
         line-height: 1.5em;
       }
-      grid-column: 4 / end;
     }
     p {
       font-weight: lighter;
     }
     .pic {
       grid-column: 1 / span 3;
+      @media (max-width: 600px) {
+        grid-column: 3 / 9;
+      }
       width: 100%;
-      clip-path: polygon(100% 0, 100% 100%, 35% 100%, 0 75%, 0 0);
-
+      clip-path: polygon(0 0, 100% 0, 100% 86%, 0 52%);
     }
 
     .intro {
@@ -80,13 +93,11 @@ main {
       h1 {
         font-size: 24px;
         line-height: 1.3em;
+        letter-spacing: 1px;
       }
       p {
         line-height: 1.5em;
       }
-    }
-    .buffer {
-      background: lightcoral;
     }
     .projects-head {
       grid-column: 2 / 8;

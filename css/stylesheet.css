@@ -57,7 +57,16 @@ main .container {
 }
 
 main .container .project {
-  grid-column: 4 / end;
+  grid-column: 4 / 9;
+}
+
+@media (max-width: 600px) {
+  main .container .project {
+    grid-column: 1 / 8;
+    position: relative;
+    top: -90px;
+    height: calc(100% - 100px);
+  }
 }
 
 main .container .project h2 {
@@ -76,7 +85,13 @@ main .container p {
 main .container .pic {
   grid-column: 1 / span 3;
   width: 100%;
-  clip-path: polygon(100% 0, 100% 100%, 35% 100%, 0 75%, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 52%);
+}
+
+@media (max-width: 600px) {
+  main .container .pic {
+    grid-column: 3 / 9;
+  }
 }
 
 main .container .intro {
@@ -87,14 +102,11 @@ main .container .intro {
 main .container .intro h1 {
   font-size: 24px;
   line-height: 1.3em;
+  letter-spacing: 1px;
 }
 
 main .container .intro p {
   line-height: 1.5em;
-}
-
-main .container .buffer {
-  background: lightcoral;
 }
 
 main .container .projects-head {
