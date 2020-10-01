@@ -6,8 +6,10 @@ body {
 
 .btn {
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 15px;
   display: inline-block;
+  background: #fff;
+  padding: 7px;
 }
 
 .logo-wrapper {
@@ -17,6 +19,7 @@ body {
   background: #fff;
   padding-left: 6px;
   margin: 0 auto 86px 15px;
+  display: inline-block;
 }
 
 .logo-wrapper:hover {
@@ -54,6 +57,25 @@ main .container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 16px;
+}
+
+main .container .projects-head {
+  position: relative;
+}
+
+main .container .projects-head .light-triangle {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  opacity: 0.1;
+  clip-path: polygon(0 0, 20% 100%, 100% 22%);
+  position: absolute;
+  top: 30px;
+  left: -15px;
+}
+
+main .container .projects-head h1 {
+  font-size: 28px;
 }
 
 main .container .project {
@@ -100,13 +122,20 @@ main .container .intro {
 }
 
 main .container .intro h1 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1.3em;
-  letter-spacing: 1px;
 }
 
 main .container .intro p {
   line-height: 1.5em;
+}
+
+main .container .intro .twitter {
+  clip-path: polygon(0 0, 20% 100%, 100% 40%);
+}
+
+main .container .intro .instagram {
+  clip-path: polygon(60% 0%, 0 70%, 100% 100%);
 }
 
 main .container .projects-head {
