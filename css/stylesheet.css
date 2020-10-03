@@ -25,7 +25,6 @@ body {
   background: #fff;
   padding-left: 6px;
   margin: 0 auto 86px 15px;
-  display: inline-block;
 }
 
 .sidebar .logo-wrapper:hover {
@@ -91,9 +90,6 @@ main .container .project {
 @media (max-width: 600px) {
   main .container .project {
     grid-column: 1 / 8;
-    position: relative;
-    top: -90px;
-    height: calc(100% - 100px);
   }
 }
 
@@ -119,6 +115,7 @@ main .container .pic {
 @media (max-width: 600px) {
   main .container .pic {
     grid-column: 3 / 9;
+    margin-bottom: -90px;
   }
 }
 
