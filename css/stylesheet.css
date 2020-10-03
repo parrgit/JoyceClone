@@ -4,9 +4,12 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+a {
+  user-select: none;
+}
+
 .btn {
   text-decoration: none;
-  padding: 0 15px;
   display: inline-block;
   background: #fff;
   padding: 7px;
@@ -33,6 +36,7 @@ body {
 
 .sidebar .logo-wrapper .logo-text {
   -webkit-font-smoothing: antialiased;
+  user-select: none;
   padding-top: 11px;
   font-size: 47px;
   font-weight: 600;
